@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Semantic HTML Page</title>
+</head>
+<body style="font-family: 'Verdana', sans-serif; background: linear-gradient(to bottom, #1e1e1e, #333); color: #e0e0e0; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <header style="background: #4CAF50; color: white; padding: 30px; text-align: center; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);">
+        <h1 style="margin: 0; font-size: 2.5em;">Welcome to My Semantic Web Page</h1>
+        <p style="font-size: 1.2em;">A showcase of creative and semantic HTML design</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav style="background: #ff9800; padding: 15px;">
+        <ul style="display: flex; justify-content: center; gap: 20px; list-style: none; margin: 0; padding: 0;">
+            <li><a href="#home" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.2em;">Home</a></li>
+            <li><a href="#navigation" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.2em;">Navigation</a></li>
+            <li><a href="#blog" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.2em;">Blog</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.2em;">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" style="padding: 40px; text-align: center;">
+        <h2 style="color: #ff9800; font-size: 2em;">About This Page</h2>
+        <p style="width: 70%; margin: auto; font-size: 1.1em; line-height: 1.6;">
+            Welcome to a demonstration of creative HTML! This page uses clean structure and modern aesthetics to showcase the use of semantic HTML and intuitive design elements. Scroll down to explore the navigation, blog, and contact sections.
+        </p>
+        <div style="margin-top: 20px;">
+                    </div>
+    </section>
+
+    <!-- Navigation Section -->
+    <section id="navigation" style="padding: 40px; background: #2a2a2a; color: #e0e0e0;">
+        <h2 style="color: #4CAF50; font-size: 2em;">Explore Activities</h2>
+        <p style="font-size: 1.1em;">Discover various activities and their subpages:</p>
+        <ul style="list-style: none; padding: 0; margin-top: 20px;">
+            <li style="margin-bottom: 10px;">
+                
+                    <strong>Activity 1A:</strong>
+                <ul style="list-style: none; padding-left: 20px;">
+                    <li><a href="home.html" style="color: #ffb6c1;">Home</a></li>
+                    <li><a href="list.html" style="color: #ffb6c1;">List</a></li>
+                    <li><a href="table.html" style="color: #ffb6c1;">Table</a></li>
+                </ul>
+                <strong>Activity 1B:</strong>
+                 
+                <ul style="list-style: none; padding-left: 20px;">
+                    <li><a href="1.html" style="color: #ffb6c1;">Div and Span</a></li>
+                    <li><a href="2.html" style="color: #ffb6c1;">Div and Section</a></li>
+                    <li><a href="3.html" style="color: #ffb6c1;">Paragraph and Article</a></li>
+                    <li><a href="4.html" style="color: #ffb6c1;">Navigation and Anchor</a></li>
+                    <li><a href="5.html" style="color: #ffb6c1;">Figure and Image</a></li>
+                    <li><a href="6.html" style="color: #ffb6c1;">Label and Legend</a></li>
+                    <li><a href="7.html" style="color: #ffb6c1;">Strong vs bold vs emphasis tag</a></li>
+                </ul>
+                <strong>Activity 1C:</strong>
+                <ul style="list-style: none; padding-left: 20px;">
+                    <li><a href="signup.html" style="color: #ffb6c1;">Sign Up</a></li>
+                    <li><a href="login.html" style="color: #ffb6c1;">Login</a></li>
+                    <li><a href="form2.html" style="color: #ffb6c1;">Form 2</a></li>
+                    <li><a href="home2.html" style="color: #ffb6c1;">Home 2</a></li>
+                </ul>
+
+                </ul>
+            </li>
+                    </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" style="padding: 40px; text-align: center;">
+        <h2 style="color: #ff9800; font-size: 2em;">Blog</h2>
+        <p style="font-size: 1.1em;">Check out the photos and videos below to learn more about semantic HTML:</p>
+        <div style="margin: 20px auto; width: 80%; text-align: center;">
+            <figure style="margin: 20px;">
+                <img src="semantic-html-example.jpg" alt="Semantic HTML example" style="width: 70%; border: 3px solid #4CAF50; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);">
+                <figcaption style="color: #aaa; margin-top: 10px;">Example of semantic HTML structure</figcaption>
+            </figure>
+            <figure style="margin: 20px;">
+                <video controls style="width: 70%; border: 3px solid #4CAF50; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);">
+                    <source src="semantic-html-tutorial.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption style="color: #aaa; margin-top: 10px;">Semantic HTML Tutorial</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <footer id="contact" style="background: #1e1e1e; color: #e0e0e0; padding: 40px;">
+        <h2 style="text-align: center; font-size: 2em; color: #4CAF50;">Contact Us</h2>
+        <form style="width: 50%; margin: auto; text-align: left;">
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-top: 5px; border: none; border-radius: 5px;">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-top: 5px; border: none; border-radius: 5px;">
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-top: 5px; border: none; border-radius: 5px;"></textarea>
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <button type="submit" style="padding: 12px 30px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            </p>
+        </form>
+        <p style="text-align: center; margin-top: 20px; color: #aaa;">&copy; 2025 My Semantic Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

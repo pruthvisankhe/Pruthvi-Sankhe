@@ -1,0 +1,158 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Form Elements</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f9fa;
+margin: 0;
+padding: 0;
+}
+.container {
+width: 80%;
+max-width: 600px;
+margin: 50px auto;
+background-color: #fff;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+h2 {
+text-align: center;
+color: #333;
+}
+label {
+font-weight: bold;
+display: block;
+margin-bottom: 8px;
+color: #555;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+input[type="radio"], input[type="checkbox"] {
+margin-right: 8px;
+}
+button {
+width: 100%;
+padding: 12px;
+background-color: #4CAF50;
+border: none;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+}
+button:hover {
+background-color: #45a049;
+}
+fieldset {
+border: 1px solid #ddd;
+padding: 15px;
+margin-bottom: 20px;
+}
+legend {
+font-weight: bold;
+color: #4CAF50;
+}
+.datalist-container {
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>HTML5 Form with Various Elements</h2>
+<form action="#" method="POST">
+
+<label for="textbox">Text Box (Name):</label>
+<input type="text" id="textbox" name="textbox" placeholder="Enter your name" required>
+
+<fieldset>
+<legend>Gender</legend>
+<label>
+<input type="radio" name="gender" value="male" required> Male
+</label>
+<label>
+<input type="radio" name="gender" value="female"> Female
+</label>
+<label>
+<input type="radio" name="gender" value="other"> Other
+</label>
+</fieldset>
+
+<fieldset>
+<legend>Hobbies</legend>
+<label>
+<input type="checkbox" name="hobbies" value="reading"> Reading
+</label>
+<label>
+<input type="checkbox" name="hobbies" value="traveling"> Traveling
+</label>
+<label>
+<input type="checkbox" name="hobbies" value="coding"> Coding
+</label>
+</fieldset>
+
+
+<label for="languages">Languages (Choose 3):</label>
+<select id="languages" name="languages" size="3" multiple>
+<option value="english">English</option>
+<option value="spanish">Spanish</option>
+<option value="french">French</option>
+<option value="german">German</option>
+<option value="chinese">Chinese</option>
+</select>
+
+
+<label for="country">Select Your Country:</label>
+<select id="country" name="country">
+<option value="usa">USA</option>
+<option value="india">India</option>
+<option value="uk">UK</option>
+<option value="canada">Canada</option>
+</select>
+
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments..."></textarea>
+
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+
+<fieldset>
+<legend>Account Information</legend>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+</fieldset>
+
+
+<div class="datalist-container">
+<label for="city">City:</label>
+<input list="cities" id="city" name="city" placeholder="Choose your city">
+<datalist id="cities">
+<option value="New York">
+<option value="Los Angeles">
+<option value="Chicago">
+<option value="Houston">
+<option value="Phoenix">
+</datalist>
+</div>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
